@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kata-isolated Copilot CLI McDonald's ordering demo">
+    <title>Golden Order Copilot</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="点餐导航">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">M</span>
+          <div>
+            <strong>Golden Order</strong>
+            <span>Kata Copilot</span>
+          </div>
+        </div>
+
+        <button class="new-chat" id="new-chat" type="button">
+          <span aria-hidden="true">＋</span> 新建对话
+        </button>
+
+        <section class="status-card" aria-labelledby="runtime-title">
+          <div class="status-dot" aria-hidden="true"></div>
+          <div>
+            <strong id="runtime-title">安全沙箱</strong>
+            <span>AKS · Kata VM 隔离</span>
+          </div>
+        </section>
+
+        <section class="sidebar-section">
+          <h2>可以这样问</h2>
+          <button class="suggestion" data-prompt="今天有什么优惠券？" type="button">
+            今天有什么优惠券？
+          </button>
+          <button class="suggestion" data-prompt="帮我找附近的门店" type="button">
+            帮我找附近的门店
+          </button>
+          <button class="suggestion" data-prompt="推荐一个两人套餐" type="button">
+            推荐一个两人套餐
+          </button>
+          <button class="suggestion" data-prompt="查看我的模拟订单" type="button">
+            查看我的模拟订单
+          </button>
+        </section>
+
+        <p class="disclaimer">
+          非麦当劳官方服务。优惠与门店信息来自只读 MCP；订单仅作模拟演示。
+        </p>
+      </aside>
+
+      <main class="chat">
+        <header class="chat-header">
+          <div>
+            <h1>麦当劳点餐助手</h1>
+            <p><span class="online-dot"></span> gpt-6-astra · OpenSandbox</p>
+          </div>
+          <label class="language">
+            <span class="sr-only">语言</span>
+            <select id="locale">
+              <option value="zh-CN">简体中文</option>
+              <option value="zh-TW">繁體中文</option>
+              <option value="en">English</option>
+            </select>
+          </label>
+        </header>
+
+        <section class="messages" id="messages" aria-live="polite" aria-label="聊天记录">
+          <article class="message assistant">
+            <div class="avatar" aria-hidden="true">M</div>
+            <div class="bubble">
+              <p class="message-label">Golden Order Copilot</p>
+              <p>你好！我可以查询优惠券、活动、门店和餐品，也可以帮你完成模拟核价与订单确认。今天想吃点什么？</p>
+            </div>
+          </article>
+        </section>
+
+        <div class="composer-wrap">
+          <div class="error" id="error" role="alert" hidden></div>
+          <form class="composer" id="chat-form">
+            <label class="sr-only" for="prompt">输入问题</label>
+            <textarea
+              id="prompt"
+              rows="1"
+              maxlength="2000"
+              placeholder="询问优惠券、餐品、门店或模拟下单…"
+              required
+            ></textarea>
+            <button class="send" id="send" type="submit" aria-label="发送">
+              <span aria-hidden="true">➤</span>
+            </button>
+          </form>
+          <p class="composer-note">
+            Copilot CLI 在独立 Kata VM 中运行，回答可能有误，请核对官方信息。
+          </p>
+        </div>
+      </main>
+    </div>
+    <script src="/vendor/marked.js" defer></script>
+    <script src="/vendor/purify.js" defer></script>
+    <script src="/markdown.js" defer></script>
+    <script src="/app.js" defer></script>
+  </body>
+</html>

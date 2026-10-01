@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": { "value": "<azure-region>" },
+    "resourcePrefix": { "value": "mcdkata" },
+    "aksName": { "value": "<aks-cluster-name>" },
+    "acrName": { "value": "<existing-acr-name>" },
+    "logAnalyticsWorkspaceName": { "value": "<existing-log-analytics-name>" },
+    "backendAppName": { "value": "<backend-container-app-name>" },
+    "frontendAppName": { "value": "<frontend-container-app-name>" },
+    "backendImage": { "value": "<acr>.azurecr.io/mcd-copilot-api:latest" },
+    "frontendImage": { "value": "<acr>.azurecr.io/mcd-copilot-web:latest" },
+    "sandboxImage": { "value": "<acr>.azurecr.io/mcd-copilot-sandbox:latest" },
+    "opensandboxDomain": { "value": "http://127.0.0.1:18080" },
+    "aksAuthorizedIpRanges": { "value": ["<deployment-client-ip>/32"] }
+  }
+}

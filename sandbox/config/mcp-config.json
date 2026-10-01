@@ -1,0 +1,29 @@
+{
+  "mcpServers": {
+    "mcd-order-sim": {
+      "type": "stdio",
+      "command": "python3",
+      "args": ["-m", "order_mcp.server"],
+      "tools": ["get_menu", "calculate_order", "create_order", "get_order"]
+    },
+    "mcd-mcp": {
+      "type": "http",
+      "url": "https://mcp.mcd.cn",
+      "headers": {
+        "Authorization": "Bearer credential-vault-placeholder"
+      },
+      "tools": [
+        "available-coupons",
+        "query-my-coupons",
+        "campaign-calendar",
+        "query-my-account",
+        "query-nearby-stores",
+        "delivery-query-stores",
+        "query-meals",
+        "query-meal-detail",
+        "query-store-coupons",
+        "calculate-price"
+      ]
+    }
+  }
+}

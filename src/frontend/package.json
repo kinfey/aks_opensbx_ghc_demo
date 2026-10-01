@@ -1,0 +1,17 @@
+{
+  "name": "golden-order-frontend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "npm run build && playwright test",
+    "test:live": "playwright test real-reply.spec.js --project=desktop"
+  },
+  "dependencies": {
+    "dompurify": "3.4.16",
+    "marked": "18.0.14"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}

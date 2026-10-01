@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: aks-kata-batchsandbox-template
+  namespace: opensandbox-system
+data:
+  batchsandbox-template.yaml: |
+    metadata:
+      labels:
+        app.kubernetes.io/part-of: mcdonalds-copilot
+        opensandbox.io/isolation: kata
+    spec:
+      replicas: 1
+      template:
+        spec:
+          runtimeClassName: kata-vm-isolation
+          restartPolicy: Never
+          terminationGracePeriodSeconds: 30
+          nodeSelector:
+            kubernetes.azure.com/kata-vm-isolation: "true"
+          securityContext:
+            seccompProfile:
+              type: RuntimeDefault
