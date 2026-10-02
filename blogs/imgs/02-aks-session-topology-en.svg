@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1080" viewBox="0 0 1500 1080" role="img" aria-labelledby="title">
+<title id="title">02-aks-session-topology / en</title>
+<rect width="1500" height="1080" fill="#ffffff"/>
+<path d="M64 197 H1436" stroke="#0078D4" stroke-width="4"/>
+<text data-id="e1" data-width="1200" x="64" y="28" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="17" fill="#000000"><tspan x="64" y="45">FIELD NOTES / 02     OPENSANDBOX x AZURE</tspan></text>
+<text data-id="e2" data-width="1372" x="64" y="80" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="39" fill="#000000"><tspan x="64" y="119">One workspace per session, not an Azure VM per request</tspan></text>
+<text data-id="e3" data-width="1372" x="64" y="146" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="22" fill="#000000"><tspan x="64" y="168">ACA hosts the application. AKS + OpenSandbox + Kata host session execution.</tspan></text>
+<rect x="64" y="215" width="936" height="220" rx="14" stroke="#0078D4" stroke-width="2" fill="none"/>
+<text data-id="e5" data-width="1200" x="86" y="231" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="23" fill="#000000"><tspan x="86" y="254">Regular Azure Container Apps (not ACA Sandboxes)</tspan></text>
+<rect x="90" y="282" width="350" height="122" rx="14" stroke="#0078D4" stroke-width="2" fill="#CFE4FA"/>
+<text data-id="e7" data-width="302" x="114" y="304" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="25" fill="#000000"><tspan x="114" y="329">Browser → Nginx</tspan></text>
+<text data-id="e8" data-width="302" x="114" y="356" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000"><tspan x="114" y="376">Public HTTPS / same-origin API</tspan></text>
+<rect x="530" y="282" width="430" height="122" rx="14" stroke="#5C2D91" stroke-width="2" fill="#E8DAEF"/>
+<text data-id="e10" data-width="382" x="554" y="304" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="25" fill="#000000"><tspan x="554" y="329">FastAPI + OpenSandbox SDK</tspan></text>
+<text data-id="e11" data-width="382" x="554" y="356" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000"><tspan x="554" y="376">Internal ingress / session_id mapping</tspan></text>
+<rect x="1050" y="282" width="360" height="122" rx="14" stroke="#495057" stroke-width="2" fill="#F3F2F1"/>
+<text data-id="e13" data-width="312" x="1074" y="304" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="25" fill="#000000"><tspan x="1074" y="329">Key Vault + Identity</tspan></text>
+<text data-id="e14" data-width="312" x="1074" y="356" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000"><tspan x="1074" y="376">Credentials for the trusted backend</tspan></text>
+<path d="M455 344 L515 344 M504.60769515458674 350 L515 344 L504.60769515458674 338" fill="none" stroke="#495057" stroke-width="3" stroke-linecap="round"/>
+<path d="M1035 344 L975 344 M985.3923048454133 338 L975 344 L985.3923048454133 350" fill="none" stroke="#495057" stroke-width="3" stroke-linecap="round"/>
+<path d="M744 445 L744 491 M738 480.60769515458674 L744 491 L750 480.60769515458674" fill="none" stroke="#5C2D91" stroke-width="3" stroke-linecap="round"/>
+<text data-id="e18" data-width="640" x="780" y="452" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#000000"><tspan x="780" y="470">Private API + secure gateway access</tspan></text>
+<rect x="64" y="507" width="1372" height="385" rx="14" stroke="#5C2D91" stroke-width="2" fill="none"/>
+<text data-id="e20" data-width="1200" x="88" y="526" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="23" fill="#000000"><tspan x="88" y="549">AKS: three Azure Linux / D4s_v5 nodes, one shared system/Kata pool</tspan></text>
+<rect x="92" y="590" width="390" height="232" rx="14" stroke="#5C2D91" stroke-width="2" fill="#E8DAEF"/>
+<text data-id="e22" data-width="342" x="116" y="612" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="25" fill="#000000"><tspan x="116" y="637">OpenSandbox</tspan></text>
+<text data-id="e23" data-width="342" x="116" y="664" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000"><tspan x="116" y="684">Lifecycle API + Controller</tspan><tspan x="116" y="712">BatchSandbox + ingress gateway</tspan><tspan x="116" y="740">Wait for execd readiness</tspan></text>
+<rect x="564" y="590" width="390" height="232" rx="14" stroke="#107C10" stroke-width="2" fill="#DFF6DD"/>
+<text data-id="e25" data-width="342" x="588" y="612" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="25" fill="#000000"><tspan x="588" y="637">Session A → Kata pod VM</tspan></text>
+<text data-id="e26" data-width="342" x="588" y="664" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000"><tspan x="588" y="684">Guest kernel A</tspan><tspan x="588" y="712">Copilot CLI + local MCP</tspan><tspan x="588" y="740">Session-local temporary files</tspan></text>
+<rect x="1026" y="590" width="382" height="232" rx="14" stroke="#107C10" stroke-width="2" fill="#DFF6DD"/>
+<text data-id="e28" data-width="334" x="1050" y="612" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="25" fill="#000000"><tspan x="1050" y="637">Session B → Kata pod VM</tspan></text>
+<text data-id="e29" data-width="334" x="1050" y="664" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000"><tspan x="1050" y="684">Guest kernel B</tspan><tspan x="1050" y="712">Separate processes and temp state</tspan><tspan x="1050" y="740">A node can host several sandboxes</tspan></text>
+<path d="M493 699 L550 699 M539.6076951545867 705 L550 699 L539.6076951545867 693" fill="none" stroke="#495057" stroke-width="3" stroke-linecap="round"/>
+<text data-id="e31" data-width="1200" x="92" y="847" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="19" fill="#000000"><tspan x="92" y="866">Default-deny egress + trusted credential proxy (logical capabilities; pod internals omitted)</tspan></text>
+<text data-id="e32" data-width="1200" x="92" y="928" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="21" fill="#000000"><tspan x="92" y="949">Allowed external services: GitHub Copilot APIs (model inference) / read-only remote MCP</tspan></text>
+<text data-id="e33" data-width="1372" x="64" y="996" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#000000"><tspan x="64" y="1014">A session ID is not a user identity. Reuse retains temporary state; deletion is not persistence.</tspan></text>
+<text data-id="e34" data-width="1200" x="64" y="1036" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="15" fill="#000000"><tspan x="64" y="1051">kinfey/aks_opensbx_ghc_demo  |  2026-10-02  |  Conceptual diagram, not to scale</tspan></text>
+</svg>

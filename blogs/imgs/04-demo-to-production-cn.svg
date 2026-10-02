@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1080" viewBox="0 0 1500 1080" role="img" aria-labelledby="title">
+<title id="title">04-demo-to-production / cn</title>
+<rect width="1500" height="1080" fill="#ffffff"/>
+<path d="M64 197 H1436" stroke="#0078D4" stroke-width="4"/>
+<text data-id="e1" data-width="1200" x="64" y="28" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="17" fill="#000000"><tspan x="64" y="45">FIELD NOTES / 04     OPENSANDBOX x AZURE</tspan></text>
+<text data-id="e2" data-width="1372" x="64" y="80" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="39" fill="#000000"><tspan x="64" y="119">从模拟点餐到可信执行：两条不能混淆的路径</tspan></text>
+<text data-id="e3" data-width="1372" x="64" y="146" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="22" fill="#000000"><tspan x="64" y="168">只读官方信息 + 本地模拟写入；完整保留回复结构，显式清理会话。</tspan></text>
+<rect x="64" y="236" width="362" height="176" rx="14" stroke="#0078D4" stroke-width="2" fill="#CFE4FA"/>
+<text data-id="e5" data-width="314" x="88" y="258" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="25" fill="#000000"><tspan x="88" y="283">用户意图</tspan></text>
+<text data-id="e6" data-width="314" x="88" y="310" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000"><tspan x="88" y="330">查询、计价、确认</tspan><tspan x="88" y="358">页面购物车只是意图</tspan></text>
+<rect x="542" y="236" width="390" height="176" rx="14" stroke="#5C2D91" stroke-width="2" fill="#E8DAEF"/>
+<text data-id="e8" data-width="342" x="566" y="258" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="25" fill="#000000"><tspan x="566" y="283">Copilot CLI in Kata</tspan></text>
+<text data-id="e9" data-width="342" x="566" y="310" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000"><tspan x="566" y="330">gpt-6-astra / 工具白名单</tspan><tspan x="566" y="358">模型推理通过外部 API</tspan></text>
+<path d="M440 323 L525 323 M514.6076951545867 329 L525 323 L514.6076951545867 317" fill="none" stroke="#495057" stroke-width="3" stroke-linecap="round"/>
+<rect x="1042" y="230" width="394" height="186" rx="14" stroke="#107C10" stroke-width="2" fill="#DFF6DD"/>
+<text data-id="e12" data-width="346" x="1066" y="252" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="25" fill="#000000"><tspan x="1066" y="277">远程 MCP：只读</tspan></text>
+<text data-id="e13" data-width="346" x="1066" y="304" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000"><tspan x="1066" y="324">优惠券、门店、餐品查询</tspan><tspan x="1066" y="352">不提供真实下单或领券</tspan></text>
+<path d="M946 323 L1027 323 M1016.6076951545867 329 L1027 323 L1016.6076951545867 317" fill="none" stroke="#495057" stroke-width="3" stroke-linecap="round"/>
+<rect x="542" y="478" width="390" height="190" rx="14" stroke="#107C10" stroke-width="2" fill="#DFF6DD"/>
+<text data-id="e16" data-width="342" x="566" y="500" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="25" fill="#000000"><tspan x="566" y="525">本地 MCP：模拟写入</tspan></text>
+<text data-id="e17" data-width="342" x="566" y="552" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000"><tspan x="566" y="572">先展示品项与总价</tspan><tspan x="566" y="600">confirmed 标志保护模拟订单</tspan><tspan x="566" y="628">不是独立认证的真实交易审批</tspan></text>
+<path d="M737 425 L737 462 M731 451.60769515458674 L737 462 L743 451.60769515458674" fill="none" stroke="#5C2D91" stroke-width="3" stroke-linecap="round"/>
+<text data-id="e19" data-width="435" x="65" y="513" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="22" fill="#000000"><tspan x="65" y="535">对外回答有来源</tspan><tspan x="65" y="565.8">模拟订单有明确标识</tspan><tspan x="65" y="596.6">不把模型文字当执行凭证</tspan></text>
+<text data-id="e20" data-width="385" x="1044" y="508" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="22" fill="#000000"><tspan x="1044" y="530">会话结束</tspan><tspan x="1044" y="560.8">删除沙箱与临时状态</tspan><tspan x="1044" y="591.6">需要持久化时单独设计</tspan></text>
+<rect x="64" y="726" width="1372" height="219" rx="14" stroke="#495057" stroke-width="2" fill="none"/>
+<text data-id="e22" data-width="1200" x="87" y="744" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="24" fill="#000000"><tspan x="87" y="768">回复链路也有契约</tspan></text>
+<rect x="88" y="802" width="284" height="112" rx="14" stroke="#5C2D91" stroke-width="2" fill="#E8DAEF"/>
+<text data-id="e24" data-width="236" x="112" y="824" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="25" fill="#000000"><tspan x="112" y="849">CLI JSONL</tspan></text>
+<text data-id="e25" data-width="236" x="112" y="876" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000"><tspan x="112" y="896">最终助手原始内容</tspan></text>
+<rect x="434" y="802" width="286" height="112" rx="14" stroke="#0078D4" stroke-width="2" fill="#CFE4FA"/>
+<text data-id="e27" data-width="238" x="458" y="824" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="25" fill="#000000"><tspan x="458" y="849">单行 JSON 封装</tspan></text>
+<text data-id="e28" data-width="238" x="458" y="876" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000"><tspan x="458" y="896">转义换行穿过 execd</tspan></text>
+<rect x="782" y="802" width="286" height="112" rx="14" stroke="#0078D4" stroke-width="2" fill="#CFE4FA"/>
+<text data-id="e30" data-width="238" x="806" y="824" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="25" fill="#000000"><tspan x="806" y="849">后端解码</tspan></text>
+<text data-id="e31" data-width="238" x="806" y="876" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000"><tspan x="806" y="896">恢复 Markdown 结构</tspan></text>
+<rect x="1130" y="802" width="278" height="112" rx="14" stroke="#107C10" stroke-width="2" fill="#DFF6DD"/>
+<text data-id="e33" data-width="230" x="1154" y="824" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="25" fill="#000000"><tspan x="1154" y="849">安全渲染</tspan></text>
+<text data-id="e34" data-width="230" x="1154" y="876" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000"><tspan x="1154" y="896">Marked + DOMPurify</tspan></text>
+<path d="M382 857 L423 857 M412.60769515458674 863 L423 857 L412.60769515458674 851" fill="none" stroke="#495057" stroke-width="3" stroke-linecap="round"/>
+<path d="M731 857 L771 857 M760.6076951545867 863 L771 857 L760.6076951545867 851" fill="none" stroke="#495057" stroke-width="3" stroke-linecap="round"/>
+<path d="M1079 857 L1119 857 M1108.6076951545867 863 L1119 857 L1108.6076951545867 851" fill="none" stroke="#495057" stroke-width="3" stroke-linecap="round"/>
+<text data-id="e38" data-width="1372" x="64" y="996" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#000000"><tspan x="64" y="1014">实际验收：真实模型回复、真实 DOM 表格、移动端布局，以及沙箱删除结果。</tspan></text>
+<text data-id="e39" data-width="1200" x="64" y="1036" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="15" fill="#000000"><tspan x="64" y="1051">kinfey/aks_opensbx_ghc_demo  |  2026-10-02  |  Conceptual diagram, not to scale</tspan></text>
+</svg>

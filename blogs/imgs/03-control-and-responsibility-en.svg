@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1080" viewBox="0 0 1500 1080" role="img" aria-labelledby="title">
+<title id="title">03-control-and-responsibility / en</title>
+<rect width="1500" height="1080" fill="#ffffff"/>
+<path d="M64 197 H1436" stroke="#0078D4" stroke-width="4"/>
+<text data-id="e1" data-width="1200" x="64" y="28" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="17" fill="#000000"><tspan x="64" y="45">FIELD NOTES / 03     OPENSANDBOX x AZURE</tspan></text>
+<text data-id="e2" data-width="1372" x="64" y="80" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="39" fill="#000000"><tspan x="64" y="119">Compare control and responsibility, not a security ranking</tspan></text>
+<text data-id="e3" data-width="1372" x="64" y="146" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="22" fill="#000000"><tspan x="64" y="168">Shared goal: separate untrusted execution from the business service. Ownership differs.</tspan></text>
+<rect x="64" y="228" width="436" height="672" rx="14" stroke="#5C2D91" stroke-width="2" fill="none"/>
+<rect x="80" y="247" width="404" height="130" rx="14" stroke="#5C2D91" stroke-width="2" fill="#E8DAEF"/>
+<text data-id="e6" data-width="356" x="104" y="269" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="25" fill="#000000"><tspan x="104" y="294">OpenSandbox on AKS</tspan></text>
+<text data-id="e7" data-width="356" x="104" y="321" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000"><tspan x="104" y="341">A sandbox platform you operate</tspan></text>
+<text data-id="e8" data-width="375" x="94" y="410" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="25" fill="#000000"><tspan x="94" y="435">You manage</tspan></text>
+<text data-id="e9" data-width="375" x="94" y="464" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#000000"><tspan x="94" y="482">OpenSandbox control plane + runtime</tspan><tspan x="94" y="507.2">Node capacity, images, network, updates</tspan><tspan x="94" y="532.4">Session lifecycle + business policy</tspan></text>
+<text data-id="e10" data-width="375" x="94" y="662" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="25" fill="#000000"><tspan x="94" y="687">Best aligned with</tspan></text>
+<text data-id="e11" data-width="375" x="94" y="716" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#000000"><tspan x="94" y="734">An established Kubernetes team</tspan><tspan x="94" y="759.2">Runtime control + portable abstractions</tspan></text>
+<rect x="532" y="228" width="436" height="672" rx="14" stroke="#0078D4" stroke-width="2" fill="none"/>
+<rect x="548" y="247" width="404" height="130" rx="14" stroke="#0078D4" stroke-width="2" fill="#CFE4FA"/>
+<text data-id="e14" data-width="356" x="572" y="269" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="25" fill="#000000"><tspan x="572" y="294">ACA Sandboxes</tspan></text>
+<text data-id="e15" data-width="356" x="572" y="321" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000"><tspan x="572" y="341">Managed, explicit workspaces</tspan></text>
+<text data-id="e16" data-width="375" x="562" y="410" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="25" fill="#000000"><tspan x="562" y="435">You manage</tspan></text>
+<text data-id="e17" data-width="375" x="562" y="464" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#000000"><tspan x="562" y="482">Create, suspend, resume each sandbox</tspan><tspan x="562" y="507.2">Use snapshots, volumes, access policy</tspan><tspan x="562" y="532.4">App identity, data, and lifecycle</tspan></text>
+<text data-id="e18" data-width="375" x="562" y="662" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="25" fill="#000000"><tspan x="562" y="687">Platform manages</tspan></text>
+<text data-id="e19" data-width="375" x="562" y="716" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#000000"><tspan x="562" y="734">Underlying sandbox infrastructure</tspan><tspan x="562" y="759.2">Within the service capability envelope</tspan></text>
+<rect x="1000" y="228" width="436" height="672" rx="14" stroke="#107C10" stroke-width="2" fill="none"/>
+<rect x="1016" y="247" width="404" height="130" rx="14" stroke="#107C10" stroke-width="2" fill="#DFF6DD"/>
+<text data-id="e22" data-width="356" x="1040" y="269" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="25" fill="#000000"><tspan x="1040" y="294">ACA Dynamic Sessions</tspan></text>
+<text data-id="e23" data-width="356" x="1040" y="321" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000"><tspan x="1040" y="341">Pool-managed execution sessions</tspan></text>
+<text data-id="e24" data-width="375" x="1030" y="410" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="25" fill="#000000"><tspan x="1030" y="435">You manage</tspan></text>
+<text data-id="e25" data-width="375" x="1030" y="464" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#000000"><tspan x="1030" y="482">Session pool configuration</tspan><tspan x="1030" y="507.2">Identifier routing + business policy</tspan><tspan x="1030" y="532.4">Task inputs, outputs, authorization</tspan></text>
+<text data-id="e26" data-width="375" x="1030" y="662" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="25" fill="#000000"><tspan x="1030" y="687">Platform manages</tspan></text>
+<text data-id="e27" data-width="375" x="1030" y="716" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#000000"><tspan x="1030" y="734">Allocation and pool lifecycle</tspan><tspan x="1030" y="759.2">Ephemeral state cleaned after cooldown</tspan></text>
+<text data-id="e28" data-width="1372" x="64" y="996" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#000000"><tspan x="64" y="1014">Managed infrastructure does not replace app authorization. OCI support does not mean interchangeable APIs.</tspan></text>
+<text data-id="e29" data-width="1200" x="64" y="1036" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="15" fill="#000000"><tspan x="64" y="1051">kinfey/aks_opensbx_ghc_demo  |  2026-10-02  |  Conceptual diagram, not to scale</tspan></text>
+</svg>
