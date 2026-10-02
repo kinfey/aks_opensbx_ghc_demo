@@ -106,10 +106,6 @@ spec:
 
 为了避免“配置里写了 Kata，所以就认为安全”的误判，我们检查实际节点池属性、三个 Ready 节点、RuntimeClass，并在临时 Kata Pod 中检查来宾内核。内核检查是部署验收信号，**不是对整个系统安全性的形式化证明**。
 
-也必须交代一个容易被误读的部署经验：该项目记录过特定订阅在相关网络功能仍为 `Pending` 时，通过所选 API/机型组合完成验证和部署。与此同时，查阅时的 AKS 官方文档仍要求注册 `Microsoft.Network/AllowBringYourOwnPublicIpAddress`。[3]
-
-两者不能推导出“所有订阅都可以忽略注册要求”。重现时应遵循当前官方支持要求；如果实际行为不一致，应向 Azure 确认，而不是把一次观测写成绕过前置条件的通用教程。
-
 ### 4.2 自建平台获得控制权，也接下了责任
 
 选择 OpenSandbox on AKS，你能控制运行时、镜像、网络布局和应用对接方式。但节点容量、镜像供应链、控制面升级、资源预算、日志、故障恢复和临时管理员权限的回收，也不会凭空消失。
@@ -286,24 +282,22 @@ OpenSandbox 给了应用一个管理执行环境的抽象，AKS 与 Kata 让我�
 
 1. [OpenSandbox：定位、SDK、运行时与示例][1]
 2. [Kata Containers：轻量虚拟机隔离][2]
-3. [AKS Pod Sandboxing：运行时、前置条件和限制][3]
-4. [OpenSandbox Credential Vault：凭据代理及恢复语义，固定提交][4]
-5. [OpenSandbox Kubernetes Operator：BatchSandbox、Pool、快照，固定提交][5]
-6. [Azure Container Apps Sandboxes 概览][6]
-7. [Azure Container Apps Dynamic Sessions 概览][7]
-8. [Dynamic Sessions 与 Sandboxes 的官方对比][8]
-9. [微软仓库中的 ACA Sandboxes Early Access 文档][9]
-10. [本项目：会话管理及运行时边界][10]
-11. [本项目：真实回复端到端浏览器测试][11]
+3. [OpenSandbox Credential Vault：凭据代理及恢复语义，固定提交][3]
+4. [OpenSandbox Kubernetes Operator：BatchSandbox、Pool、快照，固定提交][4]
+5. [Azure Container Apps Sandboxes 概览][5]
+6. [Azure Container Apps Dynamic Sessions 概览][6]
+7. [Dynamic Sessions 与 Sandboxes 的官方对比][7]
+8. [微软仓库中的 ACA Sandboxes Early Access 文档][8]
+9. [本项目：会话管理及运行时边界][9]
+10. [本项目：真实回复端到端浏览器测试][10]
 
 [1]: https://github.com/opensandbox-group/OpenSandbox
 [2]: https://github.com/kata-containers/kata-containers
-[3]: https://learn.microsoft.com/en-us/azure/aks/use-pod-sandboxing
-[4]: https://github.com/opensandbox-group/OpenSandbox/blob/3738975fc7b1da6875694f912b0422fe5d622064/docs/guides/credential-vault.md
-[5]: https://github.com/opensandbox-group/OpenSandbox/blob/3738975fc7b1da6875694f912b0422fe5d622064/docs/architecture/control-plane/operator.md
-[6]: https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-overview
-[7]: https://learn.microsoft.com/en-us/azure/container-apps/sessions
-[8]: https://sandboxes.azure.com/docs/sandboxes/dynamic-sessions-vs-sandboxes
-[9]: https://github.com/microsoft/azure-container-apps/blob/main/docs/early/sandboxes-overview.md
-[10]: https://github.com/kinfey/aks_opensbx_ghc_demo/blob/c75a35b/src/backend/app/sandbox_manager.py
-[11]: https://github.com/kinfey/aks_opensbx_ghc_demo/blob/c75a35b/src/frontend/tests/real-reply.spec.js
+[3]: https://github.com/opensandbox-group/OpenSandbox/blob/3738975fc7b1da6875694f912b0422fe5d622064/docs/guides/credential-vault.md
+[4]: https://github.com/opensandbox-group/OpenSandbox/blob/3738975fc7b1da6875694f912b0422fe5d622064/docs/architecture/control-plane/operator.md
+[5]: https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-overview
+[6]: https://learn.microsoft.com/en-us/azure/container-apps/sessions
+[7]: https://sandboxes.azure.com/docs/sandboxes/dynamic-sessions-vs-sandboxes
+[8]: https://github.com/microsoft/azure-container-apps/blob/main/docs/early/sandboxes-overview.md
+[9]: https://github.com/kinfey/aks_opensbx_ghc_demo/blob/c75a35b/src/backend/app/sandbox_manager.py
+[10]: https://github.com/kinfey/aks_opensbx_ghc_demo/blob/c75a35b/src/frontend/tests/real-reply.spec.js
